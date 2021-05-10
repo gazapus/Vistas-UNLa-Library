@@ -76,11 +76,25 @@ form:hover, form:active, form:focus {
     background-color: rgb(56, 162, 35);
     flex-grow: 1;
     color: white;
+    border-color: rgb(56, 162, 35);
+    border-width: 2pt;
+    border-style: solid;
+    border-radius: 0 15pt 15pt 0;
+    transition-duration: 0.5s;
 }
 
 .search-bar input:focus, .search-bar select:focus {
     outline: none;
     border-color: rgba(56, 162, 35, 0.527);
+}
+
+.search-bar button:focus {
+    outline: none;
+    background-color: rgb(56, 162, 35);
+}
+
+.search-bar button:hover {
+    background-color: rgb(48, 146, 28);
 }
 
 @media (max-width: 1200px) {
