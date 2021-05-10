@@ -33,12 +33,16 @@ form {
     padding: 2.3em 2em;
     box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.5);
     margin-bottom: var(--formMiddleHeightNegative);
-    background-color: rgba(255, 252, 247, 0.911);
     box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-style: solid;
+    border-width: 3pt;
+    border-color: rgba(255, 255, 255, 0.836);
+    transition-duration: 1s;
 }
 
 form:hover, form:active, form:focus {
-    background-color: rgba(255, 252, 247, 0.966);
+    background-color: rgba(0, 0, 0, 0.78);
 }
 
 .search-bar {
@@ -88,9 +92,9 @@ form:hover, form:active, form:focus {
     border-color: rgba(56, 162, 35, 0.527);
 }
 
-.search-bar button:focus {
+.search-bar button:active, .search-bar button:focus {
     outline: none;
-    background-color: rgb(56, 162, 35);
+    border-color: rgba(238, 255, 0, 0.76);
 }
 
 .search-bar button:hover {
