@@ -34,7 +34,7 @@
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">Producto</a>
+                                <a class="nav-link" aria-current="page" href="home_user.html">Producto</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Clientes</a>
@@ -43,9 +43,11 @@
                                 <a class="nav-link" href="#">Nosotros</a>
                             </li>
                         </ul>
-                        <a href="home_user.html">
-                            <button class="btn btn-outline-light me-2" type="button">Iniciar Sesión</button>
-
+                        <a>
+                            <button class="btn btn-outline-light me-2" type="button" data-bs-toggle="modal"
+                                data-bs-target="#signupmodal">
+                                Iniciar Sesión
+                            </button>
                         </a>
                     </div>
                 </div>
@@ -53,8 +55,8 @@
             <header class="d-flex  ">
                 <div class="header-card w-100 d-flex justify-content-center animate__animated animate__flipInX">
                     <div class="header-card__content d-flex flex-column justify-content-center align-items-center">
-                        <h2 class="text-center text-light mb-3 font-raleway header-card__title">Miles de personas ya confían en <span
-                                class="text-nowrap">UNLa Library</span></h2>
+                        <h2 class="text-center text-light mb-3 font-raleway header-card__title">Miles de personas ya
+                            confían en <span class="text-nowrap">UNLa Library</span></h2>
                         <p class="text-center text-light font-raleway header-card__description">
                             El software de gestión de material de estudio que los universitarios necesitan,
                             con la mejor colección bibliografica y una comunidad profesional.
@@ -68,7 +70,8 @@
             </header>
             <div class="container-fluid w-75r">
                 <ul class="d-flex list-no-style d-flex flex-row justify-content-around universidades">
-                    <li class="flex-grow-1 font-raleway universidades__text">Las principales universidades nos eligen</li>
+                    <li class="flex-grow-1 font-raleway universidades__text">Las principales universidades nos eligen
+                    </li>
                     <li class="flex-grow-1"><img class="universidades__logo" src="./images/uba.png"></li>
                     <li class="flex-grow-1"><img class="universidades__logo" src="./images/uca.png"></li>
                     <li class="flex-grow-1"><img class="universidades__logo" src="./images/unlp.png"></li>
@@ -77,9 +80,44 @@
             </div>
         </div>
     </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade bg-semidark" id="signupmodal" tabindex="-1" aria-labelledby="signupmodallabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content ">
+                <div class="modal-body rounded d-flex flex-row row m-0 p-0 bg-light box shadow-sm">
+                    <div class="col-sm-1 col-md-5 col-lg-6 hidden-xs login__image"></div>
+                    <div
+                        class="col-xs-12 col-sm-12 col-md-7 col-lg-6 d-flex flex-column align-items-center justify-content-between py-2">
+                        <button type="button" class="btn-close align-self-end justify-self-start"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                        <form class="w-100 d-flex flex-column align-items-center justify-content-center">
+                            <h5 class="font-raleway">Iniciar Sesión</h5>
+
+                            <div class="login__input">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="login__input">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" class="form-control" placeholder="Contraseña">
+                            </div>
+                            <button type="submit" class="login__button mt-4">ENTRAR</button>
+                        </form>
+                        <a href="#" class="login__signup pt-2 mb-2 text-left">Crear cuenta ➞</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a83f82191e.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
